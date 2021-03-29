@@ -55,20 +55,6 @@ const App = () => {
 
 	const removeSelection = () => {};
 
-	// const setRequested = () => {
-	// 	setrequested(1);
-	// 	localStorage.setItem(
-	// 		'auth',
-	// 		JSON.stringify({
-	// 			userId: userId,
-	// 			token: token,
-	// 			userType: userType,
-	// 			requested: 1,
-	// 			approved: 0,
-	// 			selected: 0,
-	// 		})
-	// 	);
-	// };
 	let routes;
 	if (userType === 'user') {
 		routes = (

@@ -46,6 +46,7 @@ const Home = () => {
 				})
 					.then(res => res.json())
 					.then(data => {
+						setCtime(ctime + 1000);
 						setTrainer(data.trainers);
 					})
 					.catch(err => {
