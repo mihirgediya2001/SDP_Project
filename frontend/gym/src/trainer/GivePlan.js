@@ -463,7 +463,7 @@ const GivePlan = () => {
 																		: 'SUBMIT'
 																}
 																style={{ margin: '5px' }}
-																disabled={week1savedCount === 0}
+																disabled={week1savedCount !== 7}
 																onClick={async e => {
 																	e.preventDefault();
 																	try {
@@ -655,7 +655,7 @@ const GivePlan = () => {
 																		: 'SUBMIT'
 																}
 																style={{ margin: '5px' }}
-																disabled={week2savedCount === 0}
+																disabled={week2savedCount !== 7}
 																onClick={async e => {
 																	e.preventDefault();
 																	handleClick(TransitionDown);
@@ -844,7 +844,7 @@ const GivePlan = () => {
 																		: 'SUBMIT'
 																}
 																style={{ margin: '5px' }}
-																disabled={week3savedCount === 0}
+																disabled={week3savedCount !== 7}
 																onClick={async e => {
 																	e.preventDefault();
 																	handleClick(TransitionDown);
@@ -1034,7 +1034,7 @@ const GivePlan = () => {
 																		: 'SUBMIT'
 																}
 																style={{ margin: '5px' }}
-																disabled={week4savedCount === 0}
+																disabled={week4savedCount !== 7}
 																onClick={async e => {
 																	e.preventDefault();
 																	handleClick(TransitionDown);
@@ -1222,8 +1222,9 @@ const GivePlan = () => {
 																						}}
 																					>
 																						<Autocomplete
+																							width={200}
 																							style={{
-																								width: 200,
+																								width: 175,
 																								color: 'black',
 																							}}
 																							classes={classes}
@@ -1513,7 +1514,7 @@ const GivePlan = () => {
 																				>
 																					<Autocomplete
 																						width={300}
-																						style={{ width: 200 }}
+																						style={{ width: 175 }}
 																						classes={classes}
 																						value={temp}
 																						id="grouped-demo"

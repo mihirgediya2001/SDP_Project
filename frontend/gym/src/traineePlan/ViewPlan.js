@@ -200,7 +200,7 @@ const ViewPlan = () => {
 															value="REPORTING"
 															disabled={
 																trainerPlan.week1Submitted === 1 ||
-																trainerPlan.plan[0].dayComplated === 0
+																trainerPlan.plan[6].dayComplated === 0
 															}
 															onClick={e => {
 																e.preventDefault();
@@ -271,7 +271,7 @@ const ViewPlan = () => {
 															value="REPORTING"
 															disabled={
 																trainerPlan.week2Submitted === 1 ||
-																trainerPlan.plan[7].dayComplated === 0
+																trainerPlan.plan[13].dayComplated === 0
 															}
 															onClick={e => {
 																e.preventDefault();
@@ -342,7 +342,7 @@ const ViewPlan = () => {
 															value="REPORTING"
 															disabled={
 																trainerPlan.week3Submitted === 1 ||
-																trainerPlan.plan[14].dayComplated === 0
+																trainerPlan.plan[20].dayComplated === 0
 															}
 															onClick={e => {
 																e.preventDefault();
@@ -413,7 +413,7 @@ const ViewPlan = () => {
 															value="REPORTING"
 															disabled={
 																trainerPlan.week4Submitted === 1 ||
-																trainerPlan.plan[21].dayComplated === 0
+																trainerPlan.plan[27].dayComplated === 0
 															}
 															onClick={e => {
 																e.preventDefault();

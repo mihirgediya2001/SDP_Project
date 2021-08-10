@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport(
 	sendgridTransport({
 		auth: {
 			api_key:
-				'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',
+				'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',
 		},
 	})
 );
@@ -66,7 +66,7 @@ const approve = async (req, res, next) => {
 
 	transporter.sendMail({
 		to: byid.userid.email,
-		from: 'mgediya00@gmail.com',
+		from: 'gymexerciseplanner@gmail.com',
 		subject: 'request for Trainer',
 		html: '<h1>your request  has been approved</h1>',
 	});
@@ -119,7 +119,7 @@ const decline = async (req, res, next) => {
 
 	transporter.sendMail({
 		to: user.email,
-		from: 'mgediya00@gmail.com',
+		from: 'gymexerciseplanner@gmail.com',
 		subject: 'request for Trainer',
 		html: '<h1>your request  has been decline</h1>',
 	});

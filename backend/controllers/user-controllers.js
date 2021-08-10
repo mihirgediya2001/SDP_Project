@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport(
 	sendgridTransport({
 		auth: {
 			api_key:
-				'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',
+				'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',
 		},
 	})
 );
@@ -122,7 +122,7 @@ const signup = async (req, res, next) => {
 	}
 	transporter.sendMail({
 		to: createdUser.email,
-		from: 'mgediya00@gmail.com',
+		from: 'gymexerciseplanner@gmail.com',
 		subject: 'signup success',
 		html: `<h1>welcome</h1>`,
 	});
@@ -311,7 +311,7 @@ const resetPassword = (req, res, next) => {
 					user.save().then(result => {
 						transporter.sendMail({
 							to: user.email,
-							from: 'mgediya00@gmail.com',
+							from: 'gymexerciseplanner@gmail.com',
 							subject: 'password reset',
 							html: `
               <p>You requested for password reset</p>
